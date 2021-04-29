@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "abd63fe3-a181-486f-8fae-a577572e5dfa",
+		"name": "CLOTHESSTORE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "crear producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Blusa color solido manga larga\",\r\n    \"price\": 50000,\r\n    \"priceDiscount\": 37500,\r\n    \"discount\": 25,\r\n    \"frontPicture\": \"https://cdn.koaj.co/37554-big_default/blusa-rosa-manga-largas-holgadas.jpg\",\r\n    \"backPicture\": \"https://cdn.koaj.co/37557-big_default/blusa-rosa-manga-largas-holgadas.jpg\",\r\n    \"description\": \"Blusa para mujer, en tela de cuerpo unicolor, cuello redondo, manga larga y ajuste ceñido.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1\",\r\n    \"name\": \"Blusa color solido manga larga\",\r\n    \"price\": 50000.0,\r\n    \"priceDiscount\": 37500.0,\r\n    \"discount\": 25.0,\r\n    \"frontPicture\": \"https://cdn.koaj.co/37554-big_default/blusa-rosa-manga-largas-holgadas.jpg\",\r\n    \"backPicture\": \"https://cdn.koaj.co/37557-big_default/blusa-rosa-manga-largas-holgadas.jpg\",\r\n    \"visitorCounter\": null,\r\n    \"description\": \"Blusa para mujer, en tela de cuerpo unicolor, cuello redondo, manga larga y ajuste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener producto por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/specific/blusa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"specific",
+								"blusa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener producto por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener todos los productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1999/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1999",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

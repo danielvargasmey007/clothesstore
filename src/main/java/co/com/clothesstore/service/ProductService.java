@@ -41,7 +41,7 @@ public interface ProductService {
      * @param name the name
      * @return the product by name
      */
-    Product getProductByName(String name);
+    List<Product> getProductByName(String name);
 
     /**
      * Gets the Products.

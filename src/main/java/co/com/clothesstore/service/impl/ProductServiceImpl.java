@@ -2,6 +2,7 @@ package co.com.clothesstore.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +20,18 @@ public class ProductServiceImpl implements ProductService {
 
     /** The product repository. */
     private ProductRepository productRepository;
+    
+    /**
+     * Instantiates a new product service impl.
+     *
+     * @param productRepository the product repository
+     */
+    @Autowired
+    public ProductServiceImpl(ProductRepository productRepository) {
+        super();
+        this.productRepository = productRepository;
+    }
+
     /**
      * Save product.
      *
@@ -78,8 +91,8 @@ public class ProductServiceImpl implements ProductService {
      * @return the product by name
      */
     @Override
-    public Product getProductByName(String name) {
-        return this.productRepository.findByName(name);
+    public List<Product> getProductByName(String name) {
+        return this.productRepository.findByNameContainingIgnoreCase(name);
     }
 
 }

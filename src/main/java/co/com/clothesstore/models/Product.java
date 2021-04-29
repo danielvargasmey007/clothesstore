@@ -25,8 +25,12 @@ public class Product implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
+    /** The name. */
+    @Column(nullable = false)
+    private String name;
+
     /** The price. */
-    @Column
+    @Column(nullable = false)
     private Double price;
 
     /** The price discount. */
@@ -47,7 +51,7 @@ public class Product implements Serializable {
 
     /** The visitor counter. */
     @Column(name = "visitor_counter")
-    private Integer visitorCounter = 0;
+    private Integer visitorCounter;
 
     /** The description. */
     @Column
@@ -202,6 +206,24 @@ public class Product implements Serializable {
      */
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    /**
+     * Gets the name.
+     *
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Sets the name.
+     *
+     * @param name the new name
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
 }
