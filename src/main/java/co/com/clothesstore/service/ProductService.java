@@ -34,6 +34,14 @@ public interface ProductService {
      * @return the Product
      */
     Product getProduct(String id);
+    
+    /**
+     * Gets the product by name.
+     *
+     * @param name the name
+     * @return the product by name
+     */
+    Product getProductByName(String name);
 
     /**
      * Gets the Products.

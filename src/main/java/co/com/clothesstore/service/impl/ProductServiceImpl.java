@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import co.com.clothesstore.models.Product;
 import co.com.clothesstore.models.Status;
+import co.com.clothesstore.repositories.ProductRepository;
 import co.com.clothesstore.service.ProductService;
 
 /**
@@ -16,6 +17,8 @@ import co.com.clothesstore.service.ProductService;
 @Transactional
 public class ProductServiceImpl implements ProductService {
 
+    /** The product repository. */
+    private ProductRepository productRepository;
     /**
      * Save product.
      *
@@ -24,20 +27,27 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public Product saveProduct(Product Product) {
-        // TODO Auto-generated method stub
-        return null;
+        return this.productRepository.save(Product);
     }
 
     /**
      * Delete product.
      *
-     * @param Product the product
+     * @param product the product
      * @return the status
      */
     @Override
-    public Status deleteProduct(String Product) {
-        // TODO Auto-generated method stub
-        return null;
+    public Status deleteProduct(String product) {
+        Status response = new Status();
+        try {
+            this.productRepository.deleteById(product);
+            response.setMessage("request executed successfully.");
+            response.setResponse("SUCCES");
+        } catch (Exception e) {
+            response.setMessage("request executed with error.");
+            response.setResponse("ERROR");
+        }
+        return response;
     }
 
     /**
@@ -48,8 +58,7 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public Product getProduct(String id) {
-        // TODO Auto-generated method stub
-        return null;
+        return this.productRepository.findById(id).orElse(null);
     }
 
     /**
@@ -59,8 +68,18 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public List<Product> getProducts() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.productRepository.findAll();
+    }
+
+    /**
+     * Gets the product by name.
+     *
+     * @param name the name
+     * @return the product by name
+     */
+    @Override
+    public Product getProductByName(String name) {
+        return this.productRepository.findByName(name);
     }
 
 }

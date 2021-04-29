@@ -47,7 +47,7 @@ public class Product implements Serializable {
 
     /** The visitor counter. */
     @Column(name = "visitor_counter")
-    private Integer visitorCounter;
+    private Integer visitorCounter = 0;
 
     /** The description. */
     @Column
