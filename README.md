@@ -5,6 +5,11 @@
  1) BackEnd: Spring, JUnit
  2) Infraestructura en la Nube: Docker, AWS
 
+## Modelo de Datos
+El modelo de datos relacion se simplifico mas posible sin dejar de cumplir con los criterios de aceptacion
+![image](https://user-images.githubusercontent.com/37490103/116597699-8eb5eb80-a8eb-11eb-8ec9-2454bc6addd3.png)
+
+
 ## Manual de usario
 
 La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el correo se incluyo el ENDPOINT. De igual forma como entragable se da una coleccion postman previamente organizada para facilitar las pruebas:
