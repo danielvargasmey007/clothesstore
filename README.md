@@ -11,7 +11,7 @@ La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el corr
 
 ![image](https://user-images.githubusercontent.com/37490103/116577108-ce71d880-a8d5-11eb-964a-59133fae0f0f.png)
 
-En la anterior imagen se muestran las diferentes APIS que se expusieron ente proyecto, los nombres de los request dicen de manera explicita a que funcionalidad hacen referencia.
+En la anterior imagen se muestran las diferentes APIS que se expusieron en este proyecto, los nombres de los request dicen de manera explicita a que funcionalidad hacen referencia.
 
 La coleccion de Postman se puede encontrar en la siguiente hubicacion: 
 NOTA: se debe tener POSTMAN instalado y puede seguir los siguientes pasos para importar la coleccion.
