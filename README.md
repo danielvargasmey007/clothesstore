@@ -3,7 +3,8 @@
  Para satisfacer las necesidades de esta prueba de concepto este proyecto se desarrollo usando una arquitectura SOA y haciendo uso de las siguientes tecnologias: 
  
  1) BackEnd: Spring, JUnit
- 2) Infraestructura en la Nube: Docker, AWS
+ 2) DB: H2
+ 3) Infraestructura en la Nube: Docker, AWS
 
 ## Modelo de Datos
 El modelo de datos relacion se simplifico lo mas posible sin dejar de cumplir con los criterios de aceptacion
