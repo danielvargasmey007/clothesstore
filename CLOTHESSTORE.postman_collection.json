@@ -23,10 +23,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
 							"port": "8080",
 							"path": [
@@ -51,10 +55,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
 							"port": "8080",
 							"path": [
@@ -70,10 +78,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/product/specific/blusa",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product/specific/blusa",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
 							"port": "8080",
 							"path": [
@@ -91,10 +103,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/product/all/1",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product/all/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
 							"port": "8080",
 							"path": [
@@ -107,19 +123,23 @@
 					"response": []
 				},
 				{
-					"name": "obtener todos los productos",
+					"name": "obtener productos mas visitados",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:1999/user",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "1999",
+							"port": "8080",
 							"path": [
-								"user"
+								"product"
 							]
 						}
 					},
@@ -140,10 +160,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product/1",
+							"raw": "http://ec2-3-18-212-159.us-east-2.compute.amazonaws.com:8080/product/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-3-18-212-159",
+								"us-east-2",
+								"compute",
+								"amazonaws",
+								"com"
 							],
 							"port": "8080",
 							"path": [
