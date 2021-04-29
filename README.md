@@ -15,7 +15,7 @@ En la anterior imagen se muestran las diferentes APIS que se expusieron en este 
 
 La coleccion de Postman se puede encontrar en la siguiente hubicacion: https://github.com/danielvargasmey007/clothesstore/blob/develop/CLOTHESSTORE.postman_collection.json, de igual forma se incluyo como adjunto del correo.
 
-NOTA: se debe tener POSTMAN instalado y puede seguir los siguientes pasos para importar la coleccion.
+NOTA: se debe tener POSTMAN instalado y puede seguir los siguientes pasos para importar la coleccion: https://learning.postman.com/docs/getting-started/importing-and-exporting-data/.
 
 ## Pruebas
 En el proyeto se entregaron las siguientes pruebas:
