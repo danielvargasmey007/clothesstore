@@ -22,6 +22,6 @@ En el proyeto se entregaron las siguientes pruebas:
 
 1) Pruebas unitarias
 2) Pruebas de integracion
-3) Se entrego una coleccion de postman para realizar las pruebas funcionales.
+3) Se entrego una coleccion de postman para realizar las pruebas funcionales
 
 Muchas gracias por la atencion brindada.
