@@ -6,7 +6,7 @@
  2) Infraestructura en la Nube: Docker, AWS
 
 ## Modelo de Datos
-El modelo de datos relacion se simplifico mas posible sin dejar de cumplir con los criterios de aceptacion
+El modelo de datos relacion se simplifico lo mas posible sin dejar de cumplir con los criterios de aceptacion
 ![image](https://user-images.githubusercontent.com/37490103/116597699-8eb5eb80-a8eb-11eb-8ec9-2454bc6addd3.png)
 
 
