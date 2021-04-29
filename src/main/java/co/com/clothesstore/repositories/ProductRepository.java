@@ -27,6 +27,13 @@ public interface ProductRepository extends JpaRepository<Product, String>{
      * @param name the name
      * @return the list
      */
-    List<Product> findByNameContainingIgnoreCase(String name); 
+    List<Product> findByNameContainingIgnoreCase(String name);
+
+    /**
+     * Find all by order by visitor counter desc.
+     *
+     * @return the list
+     */
+    List<Product> findAllByOrderByVisitorCounterDesc(); 
 
 }

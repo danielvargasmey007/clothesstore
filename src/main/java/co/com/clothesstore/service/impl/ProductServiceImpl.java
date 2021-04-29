@@ -93,7 +93,7 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public List<Product> getProducts() {
-        return this.productRepository.findAll();
+        return this.productRepository.findAllByOrderByVisitorCounterDesc();
     }
 
     /**
