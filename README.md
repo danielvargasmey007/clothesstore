@@ -13,7 +13,7 @@ La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el corr
 
 En la anterior imagen se muestran las diferentes APIS que se expusieron en este proyecto, los nombres de los request dicen de manera explicita a que funcionalidad hacen referencia.
 
-La coleccion de Postman se puede encontrar en la siguiente hubicacion: https://github.com/danielvargasmey007/clothesstore/blob/develop/CLOTHESSTORE.postman_collection.json, de igual forma se incluyo como adjunto del correo.
+La coleccion de Postman se puede encontrar en la siguiente ubicacion: https://github.com/danielvargasmey007/clothesstore/blob/develop/CLOTHESSTORE.postman_collection.json, de igual forma se incluyo como adjunto del correo.
 
 NOTA: se debe tener POSTMAN instalado y puede seguir los siguientes pasos para importar la coleccion: https://learning.postman.com/docs/getting-started/importing-and-exporting-data/.
 
