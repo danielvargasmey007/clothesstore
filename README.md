@@ -7,7 +7,7 @@
 
 ## Manual de usario
 
-La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el correo se incluyo el ENPOINT de este, de igual forma como entragable se da una coleccion postamn previamente organizada para facilitar las pruebas:
+La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el correo se incluyo el ENDPOINT. De igual forma como entragable se da una coleccion postman previamente organizada para facilitar las pruebas:
 
 ![image](https://user-images.githubusercontent.com/37490103/116577108-ce71d880-a8d5-11eb-964a-59133fae0f0f.png)
 
