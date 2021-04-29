@@ -14,7 +14,8 @@ El modelo de datos relacion se simplifico lo mas posible sin dejar de cumplir co
 
 La aplicacion se encuentra desplegada en una instancia de EC2 de AWS. En el correo se incluyo el ENDPOINT. De igual forma como entragable se da una coleccion postman previamente organizada para facilitar las pruebas:
 
-![image](https://user-images.githubusercontent.com/37490103/116577108-ce71d880-a8d5-11eb-964a-59133fae0f0f.png)
+![image](https://user-images.githubusercontent.com/37490103/116600007-6b407000-a8ee-11eb-8d05-63590f07e091.png)
+
 
 En la anterior imagen se muestran las diferentes APIS que se expusieron en este proyecto, los nombres de los request dicen de manera explicita a que funcionalidad hacen referencia.
 
