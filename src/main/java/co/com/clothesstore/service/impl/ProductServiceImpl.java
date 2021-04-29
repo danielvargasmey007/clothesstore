@@ -71,7 +71,19 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public Product getProduct(String id) {
-        return this.productRepository.findById(id).orElse(null);
+        Product prodcut = this.productRepository.findById(id).orElse(null);
+        if(prodcut != null) {
+            Integer counter = prodcut.getVisitorCounter();
+            
+            if(counter != null) {
+                counter += 1;
+            }else {
+                counter = 1;
+            }
+            prodcut.setVisitorCounter(counter);
+            this.productRepository.save(prodcut);
+        }
+        return prodcut;
     }
 
     /**
